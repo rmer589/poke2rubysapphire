@@ -1099,7 +1099,7 @@ void ClearBattleMonForms(void)
 
 u16 GetBGM_ForBattle(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON)
+    if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON_LUGIA_HOOH_ARTICUNO_MOLTRES_ENTEI_RAIKOU_SUICUNE_ZAPDOS)
         return BGM_BATTLE34;
     if (gBattleTypeFlags & BATTLE_TYPE_REGI)
         return BGM_BATTLE36;
@@ -1122,8 +1122,6 @@ u16 GetBGM_ForBattle(void)
         case 0x20:
             return BGM_BATTLE33;
         case 0x2E:
-            if (!StringCompare(gTrainers[gTrainerBattleOpponent].trainerName, BattleText_Wally))
-                return BGM_BATTLE20;
             return BGM_BATTLE35;
         case 0x18:
             return BGM_BATTLE38;
