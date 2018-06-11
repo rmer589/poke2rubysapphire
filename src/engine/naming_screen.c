@@ -1902,7 +1902,7 @@ static void sub_80B7960(void)
 static const struct NamingScreenTemplate playerNamingScreenTemplate =
 {
     .unk0 = 0,
-    .maxChars = 7,
+    .maxChars = 10,
     .unk2 = 1,
     .unk3 = 0,
     .unk4 = 0,
@@ -1915,7 +1915,7 @@ static const struct NamingScreenTemplate playerNamingScreenTemplate =
 static const struct NamingScreenTemplate pcBoxNamingTemplate =
 {
     .unk0 = 0,
-    .maxChars = 8,
+    .maxChars = 10,
     .unk2 = 2,
     .unk3 = 0,
     .unk4 = 0,
@@ -1928,7 +1928,7 @@ static const struct NamingScreenTemplate pcBoxNamingTemplate =
 static const struct NamingScreenTemplate monNamingScreenTemplate =
 {
     .unk0 = 0,
-    .maxChars = 10,
+    .maxChars = 12,
     .unk2 = 3,
     .unk3 = 1,
     .unk4 = 0,
