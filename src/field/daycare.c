@@ -987,13 +987,73 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     }
 
     eggSpecies = GetEggSpecies(species[parentSlots[0]]);
-    if (eggSpecies == SPECIES_NIDORAN_F && daycare->misc.countersEtc.pendingEggPersonality & 0x8000)
+    if (eggSpecies == SPECIES_NIDORAN_F && daycare->offspringPersonality & 0x8000)
     {
         eggSpecies = SPECIES_NIDORAN_M;
     }
-    if (eggSpecies == SPECIES_ILLUMISE && daycare->misc.countersEtc.pendingEggPersonality & 0x8000)
+    if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & 0x8000)
     {
         eggSpecies = SPECIES_VOLBEAT;
+    }
+    if (eggSpecies == SPECIES_HOOH && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_LUGIA;
+    }
+    if (eggSpecies == SPECIES_KYOGRE && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_GROUDON
+    }
+    if (eggSpecies = SPECIES_DIALGA; && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies == SPECIES_PALKIA
+    }
+    if (eggSpecies == SPECIES_HOOH && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_LUGIA;
+    }
+    if (eggSpecies == SPECIES_ARCEUS && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_GIRATINA;
+    }
+    if (eggSpecies == SPECIES_RESHIRAM && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_ZEKROM;
+    }
+    if (eggSpecies == SPECIES_XERNEAS && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_YVELTAL;
+    }
+    if (eggSpecies == SPECIES_ZYGARDE && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_LATIOS;
+    }
+    if (eggSpecies == SPECIES_LATIAS && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_RAYQUAZA;
+    }
+    if (eggSpecies == SPECIES_ARTICUNO && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_MOLTRES;
+    }
+    if (eggSpecies == SPECIES_ENTEI && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_RAIKOU;
+    }
+    if (eggSpecies == SPECIES_SUICUNE && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_ZAPDOS;
+    }
+    if (eggSpecies == SPECIES_BAYLEEF && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_PIKACHU;
+    }
+    if (eggSpecies == SPECIES_BULBASAUR && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_SQUIRTLE;
+    }
+    if (eggSpecies == SPECIES_MEGANIUM && daycare->offspringPersonality & 0x8000)
+    {
+        eggSpecies = SPECIES_BULBASAUR;
     }
 
     // Make Ditto the "mother" slot if the other daycare mon is male.
